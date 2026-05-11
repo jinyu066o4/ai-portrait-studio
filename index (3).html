@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI写真生成器 - 一键变美</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#f0f2f5;font-family:Microsoft YaHei;}
+        .main{max-width:600px;background:#fff;margin:20px auto;border-radius:18px;padding:30px;}
+        h2{text-align:center;color:#333;margin-bottom:30px;}
+        .style-list{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:25px;}
+        .style-item{border:1px solid #ddd;border-radius:8px;text-align:center;padding:10px;cursor:pointer;}
+        .style-item.active{background:#409eff;color:#fff;border-color:#409eff;}
+        .upload{border:2px dashed #ccc;border-radius:12px;padding:35px;text-align:center;margin:20px 0;}
+        .btn{width:100%;background:#409eff;color:#fff;border:none;padding:15px;border-radius:10px;font-size:17px;}
+        input[type="file"]{display:none;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>AI专属写真一键生成</h2>
+        <div class="style-list">
+            <div class="style-item active">时尚杂志</div>
+            <div class="style-item">复古港风</div>
+            <div class="style-item">韩系清新</div>
+            <div class="style-item">国风古风</div>
+            <div class="style-item">日系胶片</div>
+            <div class="style-item">冷淡高级</div>
+        </div>
+
+        <div class="upload">
+            <label class="btn">上传个人照片
+                <input type="file" accept="image/*">
+            </label>
+        </div>
+
+        <button class="btn">立即生成AI写真</button>
+    </div>
+
+<!-- 预留Adsterra广告代码位置 直接粘贴即可 -->
+<div></div>
+</body>
+</html>
